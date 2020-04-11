@@ -28,6 +28,10 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .sidebar ul li i {
@@ -146,6 +150,7 @@ body {
     width: 85%;
     height: 172vh;
     background-color: rgb(243, 243, 243);
+    margin-right: 202px;
 }
 
 .top {
@@ -442,7 +447,7 @@ body {
     margin-top: 20px;
 }
 
-.bottom ul.bottom-rl {
+.bottom ul {
     display: flex;
     flex-direction: row;
     margin-right: 20px;
@@ -461,7 +466,7 @@ body {
     box-shadow: -2px 2px 2px 2px #d4d2d2;
 }
 
-.bottom-right ul.number-pm {
+.bottom-right ul {
     display: flex;
     flex-direction: row;
     margin: 25px;
@@ -471,7 +476,7 @@ body {
     font-size: 10px;
 }
 
-.bottom-right ul.number-pm li {
+.bottom-right ul li {
     display: flex;
     color: rgb(231, 231, 231);
 }
@@ -490,7 +495,7 @@ body {
     color: black;
 }
 
-.bottom-right ul.number-pm li span {
+.bottom-right ul li span {
     border-radius: 5px;
     height: 15px;
     font-size: 11px;
@@ -499,57 +504,117 @@ body {
     color: #b1b0b0;
 }
 
-.jadval table {
-    position: relative;
-    top: 50px;
-    left: 190px;
+.bottom-right table.jadval {
+    position: absolute;
+    top: 500px;
+    left: 474px;
+    width: 48.5%;
     border-collapse: collapse;
-    width: 49.6vw;
-    height: 30vh;
 }
 
-.jadval td {
-    border-top: 1px solid rgb(231, 231, 231);
-    text-align: center;
-}
-
-.jadval th {
-    background-color: rgb(231, 231, 231);
-}
-
-.jadval table td ul.change-cart {
+.bottom-right table.jadval tr {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    color: black;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    height: 45px;
 }
 
-.line1 {
+.bottom-right table.jadval th {
+    background-color: rgb(251, 251, 251);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bottom-right table.jadval tr:hover {
+    box-shadow: .7px .7px 5px rgba(51, 45, 45, 0.5);
+}
+
+table.jadval td.change-cart {
+    width: 25%;
+}
+
+.property span.line {
     width: 5px;
     height: 20px;
-    background-color: blue;
     border-radius: 30%;
-    position: relative;
-    top: 8px;
-    left: 10px;
+    background-color: #57a7fc;
+    position: absolute;
+    left: 635px;
+    top: 57px;
 }
 
-.change-cart li.sound {
-    color: black;
+.property span.line2 {
+    width: 5px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: #61ff83;
+    position: absolute;
+    left: 635px;
+    top: 105px;
 }
 
-.change-cart li.public {
-    font-size: 7px;
-    color: black;
+.property span.line3 {
+    width: 5px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: #57a7fc;
+    position: absolute;
+    left: 635px;
+    top: 150px;
+}
+
+.property span.line4 {
+    width: 5px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: #c5c5c5;
+    position: absolute;
+    left: 635px;
+    top: 190px;
+}
+
+.change-cart .property {
     display: flex;
+    align-items: center;
+    padding: 5px 0;
 }
 
-.Square {
+.change-cart .Square {
     width: 15px;
     height: 15px;
-    border-radius: 3px;
-    background-color: rgb(231, 231, 231);
     position: relative;
-    bottom: 2px;
+    right: 15px;
+    bottom: 3px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.sound {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 1000;
+    padding: 3px;
+    position: relative;
+    right: 15px;
+}
+
+.public {
+    font-size: 9px;
+    margin-right: 18px;
+}
+
+.document {
+    font-size: 9px;
+    font-weight: 1000;
+    margin-right: 2px;
+    color: rgb(0, 151, 252);
 }
 
 .created {
@@ -557,11 +622,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: 40px;
 }
 
 .created img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
@@ -574,16 +641,18 @@ body {
 .name-day ul {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 20px;
 }
 
-.name1 {
-    color: black;
-    font-size: 10px;
+.important {
+    position: relative;
+    right: 20px;
 }
 
-.day1 {
-    color: rgb(184, 184, 184);
-    font-size: 7px;
+.important img {
+    position: relative;
+    left: 2px;
 }
 
 .answer {
@@ -591,11 +660,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: 55px;
 }
 
 .answer img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
@@ -603,16 +674,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.name2 {
-    color: black;
-    font-size: 10px;
-}
-
-.job2 {
-    color: rgb(184, 184, 184);
-    font-size: 7px;
 }
 
 .bottom-left {
