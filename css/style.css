@@ -148,7 +148,7 @@ body {
 
 .container {
     width: 85%;
-    height: 172vh;
+    height: 168vh;
     background-color: rgb(243, 243, 243);
     margin-right: 202px;
 }
@@ -240,7 +240,7 @@ body {
     height: 40vh;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .Center ul {
@@ -370,7 +370,7 @@ body {
 
 .bottom-right table.jadval {
     position: absolute;
-    top: 495px;
+    top: 470px;
     left: 474px;
     width: 48.5%;
     border-collapse: collapse;
@@ -575,7 +575,7 @@ body {
 
 .bottom-left table.jadval {
     position: absolute;
-    top: 495px;
+    top: 470px;
     width: 32.4%;
     border-collapse: collapse;
 }
@@ -757,7 +757,7 @@ body {
 
 .end-right table.jadval {
     position: absolute;
-    top: 845px;
+    top: 820px;
     left: 585px;
     width: 40.2%;
     border-collapse: collapse;
@@ -854,7 +854,7 @@ body {
 
 .end-left table.jadval {
     position: absolute;
-    top: 845px;
+    top: 820px;
     width: 40.2%;
     border-collapse: collapse;
 }
