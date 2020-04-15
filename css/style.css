@@ -146,11 +146,90 @@ body {
     margin-right: -20px;
 }
 
+.logo {
+    position: relative;
+    right: 49px;
+    top: 50px;
+}
+
 .container {
     width: 85%;
     height: 168vh;
     background-color: rgb(243, 243, 243);
     margin-right: 202px;
+}
+
+.search-bar {
+    width: 85%;
+    height: 50px;
+    position: fixed;
+    display: none;
+    padding: 20px;
+    z-index: 200;
+    background-color: white;
+    right: 182px;
+}
+
+.search-bar span:first-child i {
+    color: rgb(243, 243, 243);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.search-bar span:first-child input {
+    padding: 5px 10px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+.search-bar span:first-child input::placeholder {
+    color: rgb(199, 195, 195);
+}
+
+.search-bar .alarm {
+    position: relative;
+    float: left;
+}
+
+.search-bar .alarm span {
+    width: 25px;
+    height: 20px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+}
+
+.search-bar .alarm span:first-child {
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 8px;
+    bottom: 17px;
+    font-size: 12px;
+}
+
+.search-bar .alarm .bell {
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 27px;
+    bottom: 16px;
+    font-size: 12px;
+}
+
+.search-bar .alarm i {
+    margin: 0 20px;
+    color: rgb(199, 195, 195);
+    font-size: 18px;
 }
 
 .top {
@@ -302,6 +381,38 @@ body {
 
 .month i {
     margin-right: 10px;
+}
+
+.Center #myChart {
+    width: 100%;
+    position: absolute;
+    bottom: 290px;
+}
+
+.Center-left ul.amar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 235px;
+    right: 406px
+}
+
+.Center-left ul.amar li {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 50px;
+}
+
+.Center-left ul.amar li span.circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
+    position: relative;
+    left: 3px;
+    top: 2px;
 }
 
 .bottom {

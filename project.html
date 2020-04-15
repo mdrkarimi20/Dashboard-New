@@ -48,12 +48,27 @@
                         <a> <i class="fas fa-user-tie"></i>مدیریت</a><span><i class="fas fa-chevron-left"></i></span>
                     </li>
                 </ul>
+                <img src="./img/Logo.png" alt="logo" class="logo">
             </div>
         </div>
 
 
 
         <div class="container">
+            <div class="search-bar" style="display: block;">
+                <span>
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="جستجو کنید">
+                </span>
+
+                <span class="alarm">
+                    <span>۲</span>
+                <i class="fas fa-comment-alt-lines"></i>
+                <span class="bell">۸</span>
+                <i class="fas fa-bell"></i>
+                </span>
+            </div>
+
             <div class="top">
                 <ul>
                     <li>
@@ -95,6 +110,12 @@
                         <ul>
                             <li class="performance">خلاصه عملکرد</li>
                             <li class="month">ماه گذشته<i class="fas fa-caret-down"></i></li>
+                        </ul>
+                        <canvas id="myChart" height="500"></canvas>
+                        <ul class="amar">
+                            <li style="color: rgb(231, 99, 52);"><span class="circle" style="background-color: rgb(231, 99, 52);"></span>تیکت</li>
+                            <li><span class="circle"></span>دانشنامه</li>
+                            <li><span class="circle"></span>خبر</li>
                         </ul>
                     </li>
                 </ul>
@@ -624,3 +645,10 @@
 
                 </div>
                 </div>
+
+                <script src="./node_modules/chart.js/dist/Chart.bundle.js"></script>
+                <script src="./js/script.js"></script>
+
+</body>
+
+</html>
