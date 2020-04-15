@@ -386,16 +386,16 @@ body {
 .Center #myChart {
     width: 100%;
     position: absolute;
-    bottom: 290px;
+    bottom: 280px;
 }
 
 .Center-left ul.amar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
-    bottom: 235px;
-    right: 406px
+    position: relative;
+    top: 220px;
+    left: 88px;
 }
 
 .Center-left ul.amar li {
