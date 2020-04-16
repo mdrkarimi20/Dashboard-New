@@ -55,7 +55,7 @@
 
 
         <div class="container">
-            <div class="search-bar" style="display: block;">
+            <div class="search-bar">
                 <span>
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder="جستجو کنید">
@@ -648,6 +648,19 @@
 
                 <script src="./node_modules/chart.js/dist/Chart.bundle.js"></script>
                 <script src="./js/script.js"></script>
+                <script>
+                    $(document).scroll(function() {
+                        let height = $(this).scrollTop();
+                        if (height > 20) {
+                            $('.search-bar').fadeIn();
+                        } else {
+                            $('.search-bar').fadeOut();
+                        }
+                    });
+                </script>
+
+
+
 
 </body>
 

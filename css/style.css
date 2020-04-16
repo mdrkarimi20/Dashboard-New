@@ -165,9 +165,8 @@ body {
     position: fixed;
     display: none;
     padding: 20px;
-    z-index: 200;
+    z-index: 2;
     background-color: white;
-    right: 182px;
 }
 
 .search-bar span:first-child i {

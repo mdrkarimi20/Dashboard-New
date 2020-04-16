@@ -11,15 +11,13 @@ var myChart = new Chart(document.getElementById("myChart"), {
     type: "line",
     data: {
         labels: [0, 5, 10, 15, 20, 25, 30],
-        datasets: [
-            {
-                data: [17, 20, 33, 10, 48, 10, 18],
-                label: "Tickets",
-                borderColor: "#f39c1b",
-                fill: true,
-                backgroundColor: color
-            }
-        ]
+        datasets: [{
+            data: [17, 20, 33, 10, 48, 10, 18],
+            label: "Tickets",
+            borderColor: "#f39c1b",
+            fill: true,
+            backgroundColor: color
+        }]
     },
     options: {
         legend: {
@@ -51,19 +49,5 @@ var myChart = new Chart(document.getElementById("myChart"), {
                 strokeWidth: 100
             }
         }
-    }
-});
-
-
-
-
-
-
-$(document).scroll(function () {
-    let height = $(this).scrollTop();
-    if (height > 40) {
-        $('.search-box').fadeIn();
-    } else {
-        $('.search-box').fadeOut();
     }
 });
