@@ -51,3 +51,17 @@ var myChart = new Chart(document.getElementById("myChart"), {
         }
     }
 });
+
+
+$(document).scroll(function() {
+  
+                    if ($(document).scrollTop() > 40 ){
+    
+                    $('.search-bar').addClass('show');
+    
+                    } else {
+    
+                    $('.search-bar').removeClass('show');
+    
+                    };      
+                  });

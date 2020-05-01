@@ -161,25 +161,33 @@ body {
 
 .search-bar {
     width: 85%;
-    height: 50px;
+    height: 40px;
     position: fixed;
-    display: none;
     padding: 20px;
     z-index: 2;
     background-color: white;
+    opacity: 0;
+}
+
+.show {
+    opacity: 100;
 }
 
 .search-bar span:first-child i {
     color: rgb(243, 243, 243);
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 5px;
+    position: relative;
+    bottom: 7px;
 }
 
 .search-bar span:first-child input {
-    padding: 5px 10px;
-    width: 400px;
+    width: 500px;
+    height: 30px;
     border: none;
     outline: none;
+    position: relative;
+    bottom: 10px;
 }
 
 .search-bar span:first-child input::placeholder {
@@ -188,6 +196,7 @@ body {
 
 .search-bar .alarm {
     position: relative;
+    bottom: 10px;
     float: left;
 }
 
